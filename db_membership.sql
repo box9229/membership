@@ -13,6 +13,10 @@ File Encoding         : 65001
 Date: 2018-05-09 22:13:43
 */
 
+DROP DATABASE IF EXISTS `db_membership`;
+CREATE DATABASE `db_membership` /*!40100 COLLATE 'utf8_unicode_ci' */;
+USE `db_membership`;
+
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
