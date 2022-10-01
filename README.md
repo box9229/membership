@@ -8,6 +8,14 @@
 - 积分抽奖：通过管理员设置抽奖积分然后随机分配给一位会员；
 - 生日提醒：通过富文本编辑器提供人性化的邮件提醒服务；
 
+匯入資料庫檔案
+- 在專案的路徑下可以找到db_membership.sql檔案，該檔案是MySQL的資料庫資料檔案。通過MySQL匯入該檔案生成資料庫db_membership
+修改專案檔案
+- 在專案路徑下membership\src\main\resources有emailConfig.properties檔案，該檔案是用於郵箱傳送的功能，需要填入自己的郵箱和密碼還有smtp，沒有正確填入則不能正常使用郵箱的提醒功能
+Mysql root password
+- 在專案路徑下membership\src\main\resources有application.properties檔案，該檔案是MYSQL，root, password, server.port=8080 等設置
+
+
 tips:
 - 本项目使用从Spring Boot1.5.9修改到了Spring Boot2.0.0
 - 摒弃自定义过滤器设置登录，改用Spring Security
